@@ -373,6 +373,11 @@ textarea {
   margin-top: 1.2rem;
 }
 
+.contact form a:hover .message-btn {
+  color: white;
+  background-color: black;
+}
+
 .contact footer {
   display: flex;
   justify-content: space-between;
