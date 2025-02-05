@@ -104,6 +104,13 @@ ul {
   width: 100%;
 }
 
+.logo img {
+  position: relative;
+  left: -55px;
+}
+
+/* HERO */
+
 .hero {
   margin-bottom: 4.5rem;
 }
@@ -138,6 +145,12 @@ ul {
   line-height: normal;
 }
 
+.hero-pic img {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
 .contact-btn {
   position: relative;
   top: 25rem;
@@ -147,6 +160,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero a:hover .contact-btn {
+  background-color: black;
+  color: white;
 }
 
 .menu {
@@ -360,6 +378,11 @@ textarea {
   line-height: 1.625rem;
   letter-spacing: -0.01388rem;
   margin-top: 0.7rem;
+}
+
+.contact-flex textarea {
+  resize: none;
+  width: 445px !important;
 }
 
 .message-btn {
