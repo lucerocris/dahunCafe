@@ -163,3 +163,81 @@ ul {
   top: 0;
   z-index: -1;
 }
+
+/* Menu */
+
+.menu {
+  margin-top: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.menu-cards {
+  display: flex;
+  gap: 37px;
+}
+
+.menu-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 30px 25px;
+}
+
+.menu-cards .card h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.menu-list {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.menu-list h4 {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 8px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.menu-item-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.menu-item-price {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 10px;
+}   
