@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/SourceSerifPro-Regular.otf') format('opentype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/SourceSerifPro-Semibold.otf') format('opentype');
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/SourceSerifPro-Bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'MyCustomFont', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility Class */
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100vw;
+    height: 100px;
+  }
+  
+  .navbar-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 65px;
+  }
+  
+  .navbar-links li a {
+    color: black;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navbar-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-links li a:hover::after {
+    width: 100%;
+  }
