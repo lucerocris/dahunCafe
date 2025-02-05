@@ -42,6 +42,7 @@ img {
 
 body {
   font-family: 'MyCustomFont', serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -171,6 +172,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4.5rem;
 }
 
 .menu h2 {
@@ -240,4 +242,70 @@ ul {
   font-weight: 600;
   white-space: nowrap;
   margin-left: 10px;
-}   
+}
+
+/* About Us */
+
+.about-us {
+  height: 459px;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.about-us-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.about-us-text {
+  display: flex;
+  align-items: center;
+  width: 555px;
+  height: 315px;
+}
+
+.about-us-text h2 {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about-us-text p {
+  color: #000;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Location */
+
+.location {
+  margin-top: 4.5rem;
+}
+
+.location-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  h2 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2rem;
+  }
+}
+
+.location-img {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
