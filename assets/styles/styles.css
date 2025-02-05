@@ -287,6 +287,7 @@ ul {
 
 .location {
   margin-top: 4.5rem;
+  margin-bottom: 122px;
 }
 
 .location-flex {
@@ -308,4 +309,19 @@ ul {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+
+.location-img div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.5rem;
+  }
 }
