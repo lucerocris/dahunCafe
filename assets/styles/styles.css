@@ -1,6 +1,13 @@
 @font-face {
   font-family: 'MyCustomFont';
   src: url('../font/SourceSerifPro-Regular.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/SourceSerifPro-Regular.otf') format('opentype');
   font-weight: 400; /* Regular */
   font-style: normal;
 }
@@ -46,48 +53,113 @@ ul {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+}
+
+.line {
+  background-color: black;
+  height: 1px;
+  width: 1110px;
 }
 
 /* Navbar */
 
 .navbar {
-    width: 100vw;
-    height: 100px;
-  }
-  
-  .navbar-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .navbar-links {
-    display: flex;
-    gap: 65px;
-  }
-  
-  .navbar-links li a {
-    color: black;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-    position: relative;
-  }
-  
-  .navbar-links li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: black;
-    transition: width 0.3s ease;
-  }
-  
-  .navbar-links li a:hover::after {
-    width: 100%;
-  }
+  width: 100vw;
+  height: 100px;
+}
+
+.navbar-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 65px;
+}
+
+.navbar-links li a {
+  color: black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+
+.hero {
+  margin-bottom: 4.5rem;
+}
+
+.hero-flex {
+  position: relative;
+  padding: 0;
+  display: flex;
+  height: 679px;
+}
+
+.hero-text img {
+  position: absolute;
+  left: -16px !important;
+  margin-top: 8.3rem;
+}
+
+.hero-text h3 {
+  position: relative;
+  top: 350px;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-text a {
+  color: black;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.hero-text a:hover .contact-btn {
+  background-color: black;
+  color: white;
+}
+
+.contact-btn {
+  position: relative;
+  top: 400px;
+  width: 247px;
+  height: 93px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-pic img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
